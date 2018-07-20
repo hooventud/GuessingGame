@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Guessing Game</title>
+
+    <!-- Bootstrap and CSS here-->
+    <link rel='stylesheet' type='text/css' href='style.css'>
+    <link rel='stylesheet' type='text/css' href='bootstrap.css'>
+    <style>
+      body{
+        background-image: url('riddler_4x3_default.gif');
+      }
+      #footer{
+        background:lightslategray;
+      }
+      #input-parent{
+        position:relative;
+        width: 160px;
+        margin: 5% auto 50px;
+      }
+      #player-input{
+        position: relative;
+        border-radius: 50%;
+        width: 160px;
+        height: 160px;
+        font-size: 60px;
+        box-shadow: 2px 2px 2px black;
+      }
+      #submit{
+        position: absolute;
+        top:65%;
+        left:65%;
+        border-radius: 50%;
+        width: 60px;
+        height: 60px;
+        box-shadow: 2px 2px 2px black;
+      }
+    </style>
+  </head>
+  <body>
+
+      <div id='app'class='center'>
+
+        <div id='headers'>
+          <!-- Title and subtitles! -->
+          <h1 id='title'>Guessing Game!</h1>
+          <h2 id='subtitle'>Guess a number between 1 and 100!</h2>
+        </div>
+
+        <div id='main'>
+          <div id='input-parent'>
+            <!-- Player's guess input, and submit button -->
+            <input   id='player-input' class='center'placeholder="#" maxlength='3' autofocus=autofocus></input>
+            <button id='submit'class='btn btn-success'>Guess</hbutton>
+          </div>
+
+          <div id='guesses'>
+            <!-- unordered list of guesses -->
+            <ul id='guess-list'>
+              <li class='guess'>-</li>
+              <li class='guess'>-</li>
+              <li class='guess'>-</li>
+              <li class='guess'>-</li>
+              <li class='guess'>-</li>
+            </ul>
+          </div>
+
+          <div id="menu-btns">
+            <!-- reset and hint buttons -->
+            <button id='reset' class='btn btn-warning'>Reset</button>
+            <button id='hint' class='btn btn-info'>Hint</button>
+          </div>
+        </div>
+      </div>
+
+
+
+    <div id='footer'class='center'>
+        <div class='row'>
+          <div class='col-sm-4'>
+            <img src='fa-logo@2x.png'></img>
+          </div>
+
+          <div id='name'class='col-sm-4'>
+            <h4>Project by Matthew Hoover</h4>
+          </div>
+
+          <div class='col-sm-4'>
+            <img src='grace_hopper_academy.png'></img>
+          </div>
+
+
+        </div>
+    </div>
+
+  </body>
+  <script src="GuessingGame-Part2/jquery.js"></script>
+  <script src="GuessingGame-Part2/GuessingGame.js"></script>
+</html>
