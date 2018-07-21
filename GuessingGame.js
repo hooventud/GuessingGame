@@ -64,7 +64,7 @@ Game.prototype.checkGuess = function(){
         if(this.pastGuesses.length === 5){
             $('#hint, #submit').prop('disabled', true);
             $('#subtitle').text('Press the Reset button to play again!');
-            return 'You Lose.';
+            return 'You Lose. The correct answer was ' + this.winningNumber + '.';
         }
     }
     
